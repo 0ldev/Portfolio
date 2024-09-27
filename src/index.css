@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Button styles */
+.btn {
+  @apply bg-secondary dark:bg-darkSecondary text-white px-6 py-3 rounded-full hover:opacity-80 transition duration-300;
+}
+
+/* Centering content */
+.centered {
+  @apply flex flex-col items-center justify-center;
+}
+
+/* Text styles */
+.title {
+  @apply text-5xl font-bold mb-4 text-black dark:text-white text-center;
+}
+
+.subtitle {
+  @apply text-xl mb-6 text-black dark:text-white text-center max-w-xl;
+}
+
+/* Navbar styles */
+.navbar {
+  @apply p-4 flex flex-col md:flex-row justify-between items-center bg-primary dark:bg-darkSecondary text-black dark:text-white;
+}
+
+.nav-links {
+  @apply flex space-x-0 md:space-x-6 space-y-2 md:space-y-0 flex-col md:flex-row items-center;
+}
+
+.nav-link {
+  @apply hover:underline;
+}
+
+.dark-mode-toggle {
+  @apply mt-2 md:mt-0 bg-secondary dark:bg-darkPrimary text-white px-4 py-2 rounded-full flex items-center space-x-2 transition duration-300 ease-in-out hover:opacity-80;
+}
